@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.ProfileFragment"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="20dp"
+        android:text="CÁ NHÂN"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:background="@drawable/bocong1"
+                android:elevation="2dp">
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="150dp"
+                    android:layout_height="130dp"
+                    android:src="@drawable/ic_avatar" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Xin chào"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_show_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="Hello Baby"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_show_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="123@gmail.com"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="10dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/bocong1"
+                android:gravity="center"
+                android:elevation="2dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bocong1"
+                    android:padding="20dp"
+                    android:text="CÀI ĐẶT HỒ SƠ"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btn_chinh_sua_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginHorizontal="10dp"
+                    android:drawableLeft="@drawable/ic_person"
+                    android:text="THÔNG TIN CÁ NHÂN"
+                    android:textColor="@color/black"
+
+                    />
+
+                <Button
+                    android:id="@+id/btn_change_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginHorizontal="10dp"
+                    android:drawableLeft="@drawable/baseline_password_24"
+                    android:text="THAY ĐỔI MẬT KHẨU"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:elevation="2dp"
+                android:background="@drawable/bocong1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TIỆN ÍCH"
+                    android:padding="20dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/bocong1"/>
+                <Button
+                    android:id="@+id/btn_lich_su_don_hang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:text="ĐƠN HÀNG ĐANG CHỜ"
+                    android:textColor="@color/black"
+                    android:layout_marginHorizontal="10dp"
+                    android:drawableLeft="@drawable/baseline_query_builder_24"
+                    />
+                <Button
+                    android:id="@+id/btn_donhang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:text="LỊCH SỬ MUA HÀNG"
+                    android:textColor="@color/black"
+                    android:layout_marginHorizontal="10dp"
+                    android:drawableLeft="@drawable/baseline_shopping_cart_24"
+                    />
+                <Button
+                    android:id="@+id/btn_chat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:text="TRÒ CHUYỆN VỚI SHOP"
+                    android:textColor="@color/black"
+                    android:layout_marginHorizontal="10dp"
+                    android:drawableLeft="@drawable/baseline_chat_24"
+                    />
+            </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_dang_xuat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginHorizontal="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:backgroundTint="@color/blue1"
+                    android:text="ĐĂNG XUẤT"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

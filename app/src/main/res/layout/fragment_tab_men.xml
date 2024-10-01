@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".home.TabMenFragment"
+    android:orientation="vertical">
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:id="@+id/linear_layout"
+            android:background="@color/white"
+            android:orientation="vertical"
+            tools:context=".framgentHome.TopFragment">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/view_page_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp"
+                    tools:ignore="MissingConstraints" />
+
+                <me.relex.circleindicator.CircleIndicator3
+                    android:id="@+id/circleIndicator3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+
+                    android:layout_gravity="center_horizontal"
+                    app:ci_drawable="@drawable/bg_indicator_3"
+                    app:layout_constraintBottom_toBottomOf="@+id/view_page_top"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/view_page_top"
+                    tools:ignore="MissingConstraints"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DANH MỤC NỔI BẬT"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:layout_marginTop="44dp"
+                />
+            <TableLayout
+                android:id="@+id/tb_featured_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:stretchColumns="*">
+
+                <TableRow>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img_mac_ngoai"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/ic_avatar"
+                            android:scaleType="centerCrop"
+                            android:padding="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ĐỒ MẶC NGOÀI"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img_so_mi"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/ic_avatar"
+                            android:padding="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ÁO SƠ MI"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img_ao_thun"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/ic_avatar"
+                            android:padding="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ÁO THUN"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img_quan_dai"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/ic_avatar"
+                            android:padding="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="QUẦN DÀI"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img_quan_short"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_avatar" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="QUẦN SHORT"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img_polo"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/ic_avatar"
+                            android:padding="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ÁO POLO"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow>
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img_do_mac_nha"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/ic_avatar"
+                            android:padding="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ĐỒ MẶC NHÀ"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img_do_lot"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/ic_avatar"
+                            android:padding="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ĐỒ LÓT"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+                </TableRow>
+
+
+            </TableLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HÀNG MỚI VỀ"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:layout_marginTop="44dp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recyc_product_sale"
+                android:padding="15dp"/>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

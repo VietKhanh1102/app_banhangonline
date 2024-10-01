@@ -1,0 +1,103 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.example.fashionapp'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.fashionapp"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    // Firebase Messaging
+    implementation 'com.google.firebase:firebase-messaging:23.0.0'
+    implementation platform('com.google.firebase:firebase-bom:33.0.0')
+    implementation 'com.google.firebase:firebase-analytics'
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+
+    implementation 'com.google.ar.sceneform:filament-android:1.17.1'
+    implementation 'androidx.core:core:1.9.0'
+
+
+    //slider
+    implementation 'me.relex:circleindicator:2.1.6'
+    //avt tròn
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    //load ảnh từ URL
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+
+    implementation "androidx.room:room-runtime:2.5.1"
+
+    //tạo số trên giỏ hàng
+    implementation 'com.nex3z:notification-badge:1.0.4'
+
+    //load URL len ImageView
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    // Retrofit
+    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation "com.github.akarnokd:rxjava3-retrofit-adapter:3.0.0"
+
+    implementation("org.greenrobot:eventbus:3.3.1")
+
+    // thu vien call API
+    implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
+    implementation 'io.reactivex.rxjava3:rxjava:3.0.0'
+
+
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+
+    //room
+    implementation "androidx.room:room-runtime:2.5.1"
+    annotationProcessor "androidx.room:room-compiler:2.5.1"
+
+    implementation 'com.squareup.okhttp3:okhttp:3.12.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.6.0'
+
+    implementation 'com.squareup.retrofit2:converter-scalars:2.9.0'
+
+
+    //Mã hoá
+    implementation 'org.bouncycastle:bcprov-jdk15on:1.68'
+
+    //hàm băm
+    implementation 'org.mindrot:jbcrypt:0.4'
+
+
+    implementation 'at.favre.lib:bcrypt:0.9.0'
+
+
+
+
+}

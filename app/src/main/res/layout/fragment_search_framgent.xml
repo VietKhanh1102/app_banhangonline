@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.SearchFramgent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <LinearLayout
+            android:id="@+id/linea_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bocong"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_search_24"
+                android:padding="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bạn đang tìm kiếm sản phẩm gì?"
+                android:layout_gravity="center"
+                android:textColor="@color/grey1"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_search"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:contentDescription="@string/app_name"
+        app:tabIndicatorColor="@color/black"
+        app:tabTextColor="@color/black" />
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_search"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_top"
+        android:contentDescription="Dior"
+        tools:ignore="TextPresentCheck">
+    </androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>

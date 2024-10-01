@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ChiTietProductActivity"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentTop="true"
+            android:background="@color/white"
+            android:elevation="5dp">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="40dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/baseline_arrow_back_24" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/iv_back"
+                android:text="CHI TIẾT SẢN PHẨM"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+            <com.nex3z.notificationbadge.NotificationBadge
+                android:id="@+id/menu_sl"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="3dp"
+                />
+            <ImageView
+                android:id="@+id/gio_hang_a"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/baseline_add_shopping_cart_24"/>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_chitiet_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="13dp"
+                    android:text="ÁO THUN CỔ TRÒN NGẮN TAY"
+                    android:textColor="@color/black"
+                    android:textAllCaps="true"
+                    android:textSize="19sp" />
+
+                <ImageView
+                    android:id="@+id/img_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_avatar" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="13dp"
+                    android:text="KÍCH CỠ:"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <Spinner
+                        android:id="@+id/spn_kich_co"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:minHeight="48dp"
+                        android:textAlignment="textEnd" />
+                    <TextView
+                        android:layout_marginLeft="25dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Số lượng còn lại:"
+                        android:textSize="17dp"
+                        android:textColor="@color/black"
+                        />
+                    <TextView
+                        android:id="@+id/soluongsp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="50"
+                        android:textSize="17dp"
+                        />
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="150dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_gia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="13dp"
+                        android:text="399.000 VND"
+                        android:textColor="@color/black"
+                        android:textSize="23sp" />
+                    <TextView
+                        android:id="@+id/tv_sale_off"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:layout_marginStart="20dp"
+                        android:text="SALE OFF:"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/tvphantramSale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="20"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"
+                        android:textSize="20sp" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_cost_sale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="399.000 VND"
+                    android:textColor="@color/red"
+                    android:textSize="23sp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="13dp"
+                    android:text="SỐ LƯỢNG:"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    />
+                <EditText
+                    android:id="@+id/edt_so_luong"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/black"
+                    android:inputType="number"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="13dp">
+
+                    <Button
+                        android:id="@+id/btn_them_gio_hang"
+                        android:layout_width="250dp"
+                        android:layout_height="60dp"
+                        android:backgroundTint="#FF6347"
+                        android:text="THÊM VÀO GIỎ HÀNG"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="20dp"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/btn_them_favorite"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="25dp"
+                        android:layout_toRightOf="@id/btn_them_gio_hang"
+                        android:background="@drawable/baseline_favorite_24"
+                        />
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/linea_mota"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:padding="13dp"
+                        android:text="MÔ TẢ"
+
+                        android:textColor="@color/black"
+                        android:textSize="17sp"/>
+                    <ImageView
+                        android:id="@+id/img_1"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:src="@drawable/baseline_arrow_back_ios_new_24"
+
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_mo_ta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:visibility="gone"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/tv_ma_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="13dp"
+                    android:text="2311111"
+                    android:textColor="#1E1D1D"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="13dp"
+                    android:text="ĐÁNH GIÁ"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"/>
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_bang_kich_thuoc"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:padding="13dp"-->
+<!--                    android:text="XEM BẢNG KÍCH THƯỚC"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="17sp"/>-->
+<!--                <ImageView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/uniqno"-->
+<!--                    android:padding="3dp"-->
+<!--                    android:scaleType="fitStart"/>-->
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>

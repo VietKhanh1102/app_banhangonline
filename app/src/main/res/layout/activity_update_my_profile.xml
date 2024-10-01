@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".Activity.UpdateMyProfile">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:elevation="5dp"
+            android:background="@color/white">
+            <ImageView
+                android:id="@+id/iv_back_address"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/baseline_arrow_back_24" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:text="THÔNG TIN CÁ NHÂN "
+                android:textSize="20sp"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/iv_back_address"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ĐỊA CHỈ EMAIL"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginStart="15dp"/>
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/bocong"
+                android:hint="Email"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="#737272" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TÊN*"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginStart="15dp"/>
+            <EditText
+                android:id="@+id/edt_change_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bocong"
+                android:hint="Name"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="15dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="#737272" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TỈNH/THÀNH PHỐ*"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginStart="15dp"/>
+
+            <EditText
+                android:id="@+id/edt_change_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bocong"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:hint="Thành phố"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="#737272" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CHI TIẾT ĐỊA CHỈ*"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginStart="15dp"/>
+
+            <EditText
+                android:id="@+id/edt_change_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bocong"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="5dp"
+                android:hint="Address"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="#737272" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey1"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="15dp"
+                android:text="Để hoá đơn hợp lệ, yêu cầu điền chính xác thông tin bằng tiếng Việt có dấu"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ĐIỆN THOẠI"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginStart="15dp"/>
+
+            <EditText
+                android:id="@+id/edt_change_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bocong"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:hint="Sđt"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="#737272" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey1"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="15dp"
+                android:text="Bạn vui lòng nhập đúng số điện thoại của mình để tránh trường hợp đơn hàng không hợp lệ"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GIỚI TÍNH"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginStart="15dp"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/radio_group">
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NAM"
+                    android:checked="false"
+                    android:textStyle="bold"
+
+                    android:id="@+id/radio_nam"
+                    android:textColor="@color/black"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NỮ"
+                    android:checked="false"
+                    android:textStyle="bold"
+                    android:id="@+id/radio_nu"
+                    android:textColor="@color/black"/>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="wrap_content"
+                android:paddingVertical="12dp"
+                android:paddingHorizontal="56dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:text="CẬP NHẬT"
+                android:backgroundTint="@color/blue1"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
